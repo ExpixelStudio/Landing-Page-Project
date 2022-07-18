@@ -38,21 +38,21 @@ a:link , a:visited{
 .section1{
     background-color: #1f2937;
     border :#65a84a 1px solid;
-    padding : 0 15vw 0 15vw;
+    padding : 0 15vw 10vh 15vw;
 }
 
-.section1-text:nth-child(1) {
+.s1-text:nth-child(1) {
     font-size: 48px;
     font-weight: bolder;
     color : #f9faf8;
 }
 
-.section1-text:nth-child(2) {
+.s1-text:nth-child(2) {
     font-size: 18px;
     color : #e5e7eb;;
 }
 
-.header {
+.s1-header {
     display:flex;
     justify-content: space-between;
     padding-top:15px;
@@ -68,11 +68,9 @@ a:link , a:visited{
     display: flex;
     justify-content : space-between;
     border : rgb(210, 111, 219) 1px solid;
-    
-    
 }
 
-.main-container {
+.s1-main-container {
     display: flex;
     gap : 25px;
     /* flex-direction: column; */
@@ -85,5 +83,54 @@ a:link , a:visited{
 .img-container {
     height :200px;
     width : 400px;
+    /* padding-top : 15px; */
     background: #65a84a;
+}
+
+.section2 {
+    min-height : 400px; 
+    padding : 24px;
+    background-color: white;
+    color: #1F2937;
+}
+
+.s2-header{
+    padding:24px;
+}
+
+.s2-header-text {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: center;
+}
+
+.img-card-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap : 52px;
+}
+
+.img-card {
+    border: rgb(57, 118, 209) 3px solid;
+    border-radius: 12px;
+    height : 160px;
+    width: 160px;
+}
+
+.card-holder {
+    display: flex;
+    flex-direction: column;
+    width : 160px;
+    
+    align-items: center;
+    text-align: center;
+    border: rgb(169, 209, 57) 3px solid;
+    
+}
+
+.card-text {
+    
+    
 }
