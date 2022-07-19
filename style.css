@@ -134,7 +134,6 @@ a:link , a:visited{
 .section3 {
     background-color: #e5e7eb;
     color: #1f2937;
-    justify-content: center;
     padding:8% 0 8% 0;
 }
 
@@ -159,8 +158,48 @@ a:link , a:visited{
 }
 .signature{
     padding: 10px 5% 0 0;
-    
     font-size: 24px;
     font-weight: bolder;
     text-align: right;
+}
+
+.section4 {
+    background-color: white;
+    padding:8% 0 8% 0;
+}
+
+.s4-main-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.signup-container {
+    display: flex;
+    width : 60vw;
+    background-color:#3882f6;
+    color : white;
+    
+
+}
+
+.signup-text {
+
+
+}
+
+.s4-text:nth-child(1){
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.s4-text:nth-child(2){
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.signup-button {
+    display: flex;
+    align-content: center;
+    
 }
