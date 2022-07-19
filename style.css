@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     color : #f9faf8;
     background-color: rgb(22, 22, 22);
-    margin : 0 100px 0 100px;
+    margin : 0 114px 0 114px;
 }
 
 ul {
@@ -95,7 +95,7 @@ a:link , a:visited{
 }
 
 .s2-header{
-    padding:24px;
+    padding:24px 0 40px 0;
 }
 
 .s2-header-text {
@@ -105,11 +105,23 @@ a:link , a:visited{
     text-align: center;
 }
 
-.img-card-container {
+.cards-container {
     display: flex;
     justify-content: center;
     align-content: center;
     gap : 52px;
+}
+
+.card-holder {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width : 160px;
+    
+    align-items: center;
+    text-align: center;
+    border: rgb(169, 209, 57) 1px solid;
+    
 }
 
 .img-card {
@@ -119,18 +131,36 @@ a:link , a:visited{
     width: 160px;
 }
 
-.card-holder {
-    display: flex;
-    flex-direction: column;
-    width : 160px;
-    
-    align-items: center;
-    text-align: center;
-    border: rgb(169, 209, 57) 3px solid;
-    
+.section3 {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    justify-content: center;
+    padding:8% 0 8% 0;
 }
 
-.card-text {
+.s3-main-container {
+    display : flex;
+    justify-content: center;
+    /* padding : 8%; */
+}
+
+.quote-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    border: rgb(236, 44, 188) 1px solid;
+}
+
+.s3-text {
+    font-size: 36px;
+    font-style:italic;
+    font-weight:lighter;
+}
+.signature{
+    padding: 10px 5% 0 0;
     
-    
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: right;
 }
