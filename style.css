@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     color : #f9faf8;
     background-color: rgb(22, 22, 22);
-    margin : 0 114px 0 114px;
+    /* margin : 0 124px 0 124px; */
 }
 
 ul {
@@ -176,7 +176,14 @@ a:link , a:visited{
 
 .signup-container {
     display: flex;
-    width : 60vw;
+    /* flex:1; */
+    width : 56vw;
+    /* height : 14vh; */
+    padding : 2.5% 10% 2.5% 8%;
+    border-radius : 5px;
+    align-items : center;
+    /* justify-content: center; */
+    justify-content: space-between;
     background-color:#3882f6;
     color : white;
     
@@ -184,7 +191,7 @@ a:link , a:visited{
 }
 
 .signup-text {
-
+    /* padding-left : 70px; */
 
 }
 
@@ -194,12 +201,25 @@ a:link , a:visited{
 }
 
 .s4-text:nth-child(2){
-    font-size: 14px;
+    font-size: 16px;
     font-weight: lighter;
 }
 
 .signup-button {
-    display: flex;
-    align-content: center;
-    
+    padding : 10px 44px;
+    background-color: #3882f6;
+    border: white 2px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    color : white;
+}
+
+
+.footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding : 2%;
+    background-color: #1f2937;
 }
