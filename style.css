@@ -9,15 +9,10 @@ body {
     flex-direction: column;
     color : #f9faf8;
     background-color: rgb(22, 22, 22);
-    /* margin : 0 124px 0 124px; */
+    margin : 0 124px 0 124px;
 }
 
-ul {
-    list-style-type: none;
-    margin : 0;
-    padding : 0;
-}
-
+/* -- Section-1 CSS -- */
 a{
     color : #f9faf8;
 }
@@ -35,21 +30,10 @@ a:link , a:visited{
     
 }
 
+/* -- Section-1 CSS -- */
 .section1{
     background-color: #1f2937;
-    border :#65a84a 1px solid;
     padding : 0 15vw 10vh 15vw;
-}
-
-.s1-text:nth-child(1) {
-    font-size: 48px;
-    font-weight: bolder;
-    color : #f9faf8;
-}
-
-.s1-text:nth-child(2) {
-    font-size: 18px;
-    color : #e5e7eb;;
 }
 
 .s1-header {
@@ -59,7 +43,7 @@ a:link , a:visited{
     padding-bottom: 10vh;;
 }
 
-.right-links {
+.right-links {  /* header links */
     display: flex;
     gap:24px;
 }
@@ -67,35 +51,67 @@ a:link , a:visited{
 .section1-body{
     display: flex;
     justify-content : space-between;
-    border : rgb(210, 111, 219) 1px solid;
+    align-items: center;
+    padding : 20px;
 }
 
 .s1-main-container {
     display: flex;
     gap : 25px;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     width:420px;
-    
-    border : red 1px solid;
+}
+
+.s1-text:nth-child(1) {  /* s1 <H> style text */
+    font-size: 48px;
+    font-weight: bolder;
+    color : #f9faf8;
+}
+
+.s1-text:nth-child(2) {    /* s1 <P> style text */
+    font-size: 18px;
+    color : #e5e7eb;;
+}
+
+#s1-signup-btn {
+    background-color: #3882f6;
+    color : white;
+    padding : 6px 34px;
+    border-radius: 5px;
+    border : #3882f6 1px solid;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 2px #738caf;
+}
+
+#s1-signup-btn:active {
+    background-color: #2e6dd3;
+    border : greenyellow 1px solid;
+    transform: translateY(2px);
+    box-shadow: 0px 0.5px #738caf; /*  horizontal , vertical , color */
+}
+
+#s1-signup-btn:hover {
+    color : greenyellow;
 }
 
 .img-container {
     height :200px;
     width : 400px;
-    /* padding-top : 15px; */
-    background: #65a84a;
+    background: #8c928a;
 }
+/* -- END of Section-1 CSS --*/
 
+
+/* -- Section-2 CSS --*/
 .section2 {
-    min-height : 400px; 
-    padding : 24px;
+    padding:4% 0 8% 0;
     background-color: white;
     color: #1F2937;
 }
 
 .s2-header{
-    padding:24px 0 40px 0;
+    padding:0px 0 3% 0;
 }
 
 .s2-header-text {
@@ -109,19 +125,15 @@ a:link , a:visited{
     display: flex;
     justify-content: center;
     align-content: center;
-    gap : 52px;
+    gap : 72px;
 }
 
-.card-holder {
+.card-holder {  /* img-card , card holder/container */
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width : 160px;
-    
     align-items: center;
     text-align: center;
-    border: rgb(169, 209, 57) 1px solid;
-    
 }
 
 .img-card {
@@ -130,7 +142,10 @@ a:link , a:visited{
     height : 160px;
     width: 160px;
 }
+/* -- END of Section-2 CSS --*/
 
+
+/* -- Section-3 CSS --*/
 .section3 {
     background-color: #e5e7eb;
     color: #1f2937;
@@ -140,7 +155,6 @@ a:link , a:visited{
 .s3-main-container {
     display : flex;
     justify-content: center;
-    /* padding : 8%; */
 }
 
 .quote-container {
@@ -148,7 +162,6 @@ a:link , a:visited{
     flex-direction: column;
     justify-content: center;
     width: 50vw;
-    border: rgb(236, 44, 188) 1px solid;
 }
 
 .s3-text {
@@ -162,7 +175,10 @@ a:link , a:visited{
     font-weight: bolder;
     text-align: right;
 }
+/* -- END of Section-3 CSS --*/
 
+
+/* -- Section-4 CSS -- */
 .section4 {
     background-color: white;
     padding:8% 0 8% 0;
@@ -171,41 +187,31 @@ a:link , a:visited{
 .s4-main-container{
     display: flex;
     justify-content: center;
-    
 }
 
 .signup-container {
     display: flex;
-    /* flex:1; */
     width : 56vw;
-    /* height : 14vh; */
-    padding : 2.5% 10% 2.5% 8%;
+    padding : 2.5% 10% 2.5% 8%; /* spacing for text and button from left and right */
     border-radius : 5px;
     align-items : center;
-    /* justify-content: center; */
     justify-content: space-between;
     background-color:#3882f6;
     color : white;
-    
-
 }
 
-.signup-text {
-    /* padding-left : 70px; */
 
-}
-
-.s4-text:nth-child(1){
-    font-size: 24px;
+.s4-text:nth-child(1){  /* s4 bold, H style text */
+    font-size: 24px; 
     font-weight: bold;
 }
 
-.s4-text:nth-child(2){
+.s4-text:nth-child(2){ /* s4 P style text */
     font-size: 16px;
     font-weight: lighter;
 }
 
-.signup-button {
+#s4-signup-btn {
     padding : 10px 44px;
     background-color: #3882f6;
     border: white 2px solid;
@@ -213,8 +219,20 @@ a:link , a:visited{
     font-size: 16px;
     font-weight: bolder;
     color : white;
+    box-shadow: 0px 2px #738caf;
 }
 
+#s4-signup-btn:active {
+    background-color: #2e6dd3;
+    border : greenyellow 1px solid;
+    transform: translateY(2px);
+    box-shadow: 0px 0.5px #738caf; /*  horizontal , vertical , color */
+}
+
+#s4-signup-btn:hover {
+    color : greenyellow;
+}
+/* -- END of Section-4 CSS --*/
 
 .footer {
     display:flex;
